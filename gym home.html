@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhat Fitness</title>
+</head>
+<link rel="stylesheet" href="css/tut21.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<style>
+    /* css reset  */
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        color: white;
+        /* as background color is black */
+        margin: opx;
+        padding: opx;
+        background: url(img/fitness-863081_1920.jpg);
+        box-sizing: border-box;
+    }
+    #header{
+        background-color: rgb(14, 171, 111);
+        position:sticky;
+        top:0px;
+        height:95px;
+    }
+    .header{
+        background-color: rgb(14, 171, 111);
+        opacity: 0.9;
+    }
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 56px;
+    }
+
+    .left img {
+        width: 85px;
+        display: block;
+        margin: 0px auto;
+        /* filter:invert(100%); is used to change the black colour image to completely white and white into completely black     */
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+    .mid {
+        display: block;
+        /* border: 2px solid green; */
+        width: 55%;
+        margin: 25px auto;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+        /* here we can also use float:left; in place of display:inline block;
+        in this we also have to make list-style:none; and also we have to make overflow:auto; in ul tag */
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: white;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(228, 183, 183);
+        /* it is used to underline the content when hover and in a active state  */
+    }
+
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 34px;
+        /* border: 2px solid yellow; */
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        color: white;
+        background-color: black;
+        border: 2px solid grey;
+        border-radius: 10px;
+        margin: 0px 10px;
+        padding: 5px 15px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    .btn:hover {
+        background-color: rgb(133, 97, 97);
+    }
+
+
+    .container {
+        border: 2px solid white;
+        margin: 200px 70px;
+        padding: 20px 40px;
+        width: 32%;
+        border-radius: 28px;
+        display: inline-block;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 90px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .button {
+        display: block;
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    .course {
+        font-family: 'Baloo Bhai 2', cursive;
+        color: white;
+        display: block;
+        width: 60%;
+        background-color: black;
+        border: 2px solid grey;
+        border-radius: 10px;
+        margin: 0px auto;
+        padding: 5px 15px;
+        cursor: pointer;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .course:hover {
+        background-color: rgb(133, 97, 97);
+    }
+
+    .container1 {
+        display: inline-block;
+        border: 2px solid white;
+        margin: 200px 70px;
+        padding: 20px 40px;
+        width: 32%;
+        border-radius: 28px;
+    }
+
+    .container1 h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 52px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .conatainer2 {
+        width: 60%;
+        margin: 0px auto;
+        padding: 20px 40px;
+    }
+
+    .container2 h1 {
+        text-align: center;
+        color: yellow;
+    }
+
+    .container2 h2 {
+        text-align: center;
+        color: yellow;
+    }
+
+    .footer {
+        background-color: black;
+    }
+
+    .footer p,.footer h2 {
+        text-align: center;
+    }
+
+    .underline {
+        width: 250px;
+    }
+
+    .container3 li {
+        display: block;
+        width: 250px;
+        margin: 5px auto;
+    }
+    .container3 li a{
+        color:white;
+    }
+    .container4 h3{
+        text-align: center;
+    }
+    .container4 h3 a{
+        color:yellow;
+    }
+    .container4 li{
+        list-style: none;
+        display: inline-block;
+    }
+    .social-icon{
+        display:block;
+        margin:5px auto;
+        padding:10px 10px;
+        width:380px;
+    }
+    .social-icon a{
+        color:yellow;
+        text-align: center;
+        padding:5px 5px;
+    }
+    footer a:hover{
+        background-color: rgb(133, 97, 97);
+    }
+    .footer h2,.footer p,.footer a,.footer h3{
+        opacity: 0.7;
+    }
+   
+
+    /*.form-grp input{
+        font-family: 'Baloo Bhai 2', cursive;
+        font-weight: bold;
+        border: 2px solid black;
+        font-size:17px;
+        text-align: center;
+        display: block;
+        margin: 8px auto;
+        padding: 1px;
+        width: 70%;
+        border-radius: 8px;
+    }
+    hr{
+        color:white;
+    } */
+</style>
+
+<body>
+    <header class="header" id="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/sport-1235019_640.jpg" alt="">
+            <div>Prabhat Fitness</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="/tut26.html" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="/tut26a.html">Join Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <!-- <div class="container">
+        <h1>Join the best Jym of Patna now </h1><hr>
+        <form action="noend.php">
+            <div class="form-grp">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-grp">
+                <input type="text" placeholder="Enter your age">
+            </div>
+            <div class="form-grp">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-grp">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <div class="form-grp">
+                <input type="text" placeholder="Enter your Phone no">
+            </div>
+            <div class="form-grp">
+                <input type="text" placeholder="Enter your Email id">
+            </div>
+            <div class="button">
+                <button class="btn">Submit</button>
+                <button class="btn">Reset Now</button>
+            </div>
+            if here only one button is present then no need to use div tag. simply select .container k andar ka button and make it display:block; and apply width on it and then do margin:auto; 
+
+            as here is two button present so if we make display:block; to one of them and do margin:auto then another button will come down to another so here we have to apply div tag must and set the width of the div tag and apply margin:auto directly as because it is block element already 
+        </form>
+    </div> -->
+    <div class="container">
+        <h1>GYM TRAINER</h1>
+        <hr>
+        <div class="button">
+            <a href="#" class="course">Veiw Course</a>
+        </div>
+    </div>
+    <div class="container1">
+        <h1>BUILD PERFECT BODY SHAPE FOR GOOD AND HEALTHY LIFE</h1>
+    </div>
+    <div class="container2">
+        <h1>GOOD THINGS COMES TO THOSE WHO SWEAT</h1>
+        <h2>FITNESS IS NOT ABOUT BEING BETTER THAN SOMEONE ELSE...IT'S ABOUT BEING BETTER THAN YOU USED TO BE</h2>
+    </div>
+    <footer class="footer">
+        <div class="container3">
+            <h2>ABOUT</h2>
+            <hr class="underline">
+            <p class="paragraph1">PrabhatFitness.com <i>Be Fitter Anyhow</i> is an initiative to make society healthier and fitter.Prabhat Fitness focuses on providing good facilities,So that it will become easy for the customer to do training.</p>
+            <hr>
+        </div>
+        <div class="container3">
+            <h2>QUICK LINKS</h2><hr class="underline">
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="/tut26a.html">JOIN US</a></li>
+            </ul><hr>
+        </div>
+        <div class="container4">
+            <h3>Copyright &copy; 2020 All rights Reserved by <a href="#">PrabhatFitness</a></h3>
+            <ul class="social-icon">
+                <li><a href="http://www.facebook.com" class="facebook" target="_blank">Goto facebook</a></li>
+                <li><a href="http://www.twitter.com" class="twitter" target="_blank">Go totwitter</a></li>
+                <li><a href="http://www.linkedin.com" class="linkedin" target="_blank">Go to linkedin</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
